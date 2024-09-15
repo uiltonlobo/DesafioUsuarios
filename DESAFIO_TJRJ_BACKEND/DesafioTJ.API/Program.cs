@@ -7,6 +7,7 @@ using DesafioTJ.Domain.Service;
 using DesafioTJ.Infra.Database;
 using DesafioTJ.Infra.Repository;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using System.Threading.RateLimiting;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,8 +20,7 @@ builder.Services.AddAutoMapperApi(typeof(MapperProfile));
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
+builder.Services.AddSwaggerDefinitions();
 
 var app = builder.Build();
 

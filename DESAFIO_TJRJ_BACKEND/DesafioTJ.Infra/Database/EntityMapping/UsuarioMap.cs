@@ -26,7 +26,7 @@ namespace DesafioTJ.Infra.Database.EntityMapping
             builder.Property(x => x.IdTipoUsuario).IsRequired().HasColumnName("ID_TIPOUSUARIO");
 
             builder.HasOne(x => x.TipoUsuario).WithMany().HasForeignKey(x => x.IdTipoUsuario).IsRequired();
-            //builder.Navigation(x => x.TipoUsuario).AutoInclude();
+            builder.Navigation(x => x.TipoUsuario).AutoInclude();
         }
     }
 }

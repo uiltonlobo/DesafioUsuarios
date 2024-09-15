@@ -95,5 +95,14 @@ namespace DesafioTJ.Domain.Resource {
                 return ResourceManager.GetString("CAMPO_SOMENTE_UM_CARACTER", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to O campo {0} já é utilizado por outro registro de {1}.
+        /// </summary>
+        internal static string CAMPO_UTILIZADO_POR_OUTRO_REGISTRO {
+            get {
+                return ResourceManager.GetString("CAMPO_UTILIZADO_POR_OUTRO_REGISTRO", resourceCulture);
+            }
+        }
     }
 }

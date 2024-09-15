@@ -28,6 +28,11 @@ namespace DesafioTJ.Infra.Repository.Base
             return _usuarioContext.Set<TEntity>().Find(id);
         }
 
+        public bool Any(Func<TEntity, bool> predicate)
+        {
+            return _usuarioContext.Set<TEntity>().Any(predicate);
+        }
+
         public IList<TEntity> GetAll()
         {
             return _usuarioContext.Set<TEntity>().ToList();

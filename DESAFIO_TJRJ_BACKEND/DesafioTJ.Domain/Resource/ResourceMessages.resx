@@ -129,4 +129,7 @@
   <data name="CAMPO_SOMENTE_UM_CARACTER" xml:space="preserve">
     <value>{0} deve ter apenas 1 caracter</value>
   </data>
+  <data name="CAMPO_UTILIZADO_POR_OUTRO_REGISTRO" xml:space="preserve">
+    <value>O campo {0} já é utilizado por outro registro de {1}</value>
+  </data>
 </root>

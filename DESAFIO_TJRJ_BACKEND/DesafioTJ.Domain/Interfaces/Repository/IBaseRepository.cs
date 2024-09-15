@@ -13,5 +13,6 @@ namespace DesafioTJ.Domain.Interfaces.Repository
         TEntity Get(int id);
         void Add(TEntity entity);
         void SaveChanges();
+        bool Any(Func<TEntity, bool> predicate);
     }
 }

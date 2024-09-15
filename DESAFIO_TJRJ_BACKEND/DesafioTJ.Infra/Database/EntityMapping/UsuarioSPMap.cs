@@ -25,6 +25,3 @@ namespace DesafioTJ.Infra.Database.EntityMapping
         }
     }
 }
-
-
-//U.ID_USU, U.NOME_USU, U.MATR_USU, U.DATA_NASC, U.EMAIL, TU.ID_TIPOUSUARIO, TU.ORIGEM, TU.DESCR

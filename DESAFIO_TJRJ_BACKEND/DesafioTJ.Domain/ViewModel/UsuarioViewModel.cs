@@ -13,6 +13,7 @@ namespace DesafioTJ.Domain.ViewModel
         public string? Matricula { get; set; }
         public DateTime? DataNascimento { get; set; }
         public string? Email { get; set; }
+
         public int? IdTipoUsuario { get; set; }
         public TipoUsuarioViewModel? TipoUsuario { get; set; }
     }
